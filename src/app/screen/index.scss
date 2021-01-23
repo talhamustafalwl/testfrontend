@@ -1,0 +1,118 @@
+
+:root {
+    --primary-color: #333169; 
+    --primary-contrast-color: #826ef9;
+
+    --secondary-color: #eff3fa;
+    --secondary-contrast-color:#eff3fa;
+
+     --yellow-color: #fbbc37;
+    --yellow-contrast-color:#ffdf86;
+
+     --blue-color: #b3d1fc;
+     --blue-contrast-color: #b3d1fc;
+
+     --darkblue-color:  #2f82fa;
+
+     --green-color: #6ed886;
+     --green-contrast-color: #def8e7;
+
+     --grey-color: #c7cace;
+     --grey-contrast-color: #a2a2bb;
+    
+
+        --darkgrey-color:  #afb4bb;
+     --darkgrey-contrast-color:  #afb4bb;
+
+     --white-color: white;
+     --white-contrast-color: white;
+}
+
+.default-theme { 
+    .primaryText {color: var(--primary-color);}
+    .primaryBackground {background: var(--primary-color);}
+    .primaryContrastBackground {background: var(--primary-contrast-color);}
+
+    .secondaryText {color: var(--secondary-color);}
+    .secondaryBackground { background: var(--secondary-color);}
+    .secondaryContrastBackground {background: var(--secondary-contrast-color);}
+
+
+     .greyText {color: var(--grey-color);}
+    .greyBackground { background: var(--grey-color);}
+    .greyContrastBackground {background: var(--grey-contrast-color);}
+
+    .darkgreyText {color: var(--darkgrey-color);}
+    .darkgreyBackground { background: var(--darkgrey-color);}
+    .darkgreyContrastBackground {background: var(--darkgrey-contrast-color);}
+
+     .whiteText {color: var(--white-color);}
+    .whiteBackground { background: var(--white-color);}
+    .whiteContrastBackground {background: var(--white-contrast-color);}
+
+    .blueText {color: var(--blue-color);}
+    .blueBackground { background: var(--blue-color);}
+    .blueContrastBackground {background: var(--blue-contrast-color);}
+}
+
+.centerContent{
+    display: flex;justify-content:center;align-items: center; height: 100vh;
+}
+.centerDiv{    margin: 0px auto;width: 50%;}
+
+.heading{
+   font-size:25px;font-weight:bolder;
+}
+.subHeading{
+   font-size: 20px;font-weight:bold;
+}
+.sub-Heading{
+   font-size: 17px;font-weight:bold;
+}
+
+.headingWhite{
+   font-size:xx-large;font-weight:bolder;color:var(--white-color) ;
+}
+.subHeadingWhite{
+   font-size: large;font-weight:bold;color:var(--white-color) ;
+}
+
+.cardGreen{
+    background: var(--green-contrast-color); border-radius: 20px; color: var(--green-color);
+    text-align: center; width: 50%;font-size: 12px
+}
+.cardYellow{
+    background: var(--yellow-contrast-color); border-radius: 20px; color: var(--yellow-color);
+    text-align: center; width: 50%;font-size: 12px;
+}
+
+.coverScreen{min-height: 100vh;}
+
+// fontSizes
+.fs10{font-size: 10;}
+.fs12{font-size: 12;}
+.fs15{font-size: 15;}
+.fslg{font-size: large;}
+.fsMd{font-size: medium;}
+.fsSm{font-size: small;}
+.fsSmaller{font-size: smaller;}
+
+// .ant-select-selection-placeholder {
+//   color: black;
+// }
+
+.borderColorBlue{
+   border:1px solid var(--darkblue-color);
+   // color:var(--darkblue-color)
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.imageLogoCart{
+   width: 60px; height: 60px; border-radius: 40px; position: absolute; top: -20px
+}
+
+.ant-modal-content{ text-align:center;border-radius: 20px;}
+.ant-modal-confirm .ant-modal-confirm-btns{float: unset;}
+.ant-modal-confirm-body > .anticon{display: none;}
