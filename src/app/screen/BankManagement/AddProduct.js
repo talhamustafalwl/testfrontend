@@ -18,7 +18,6 @@ export default function AddProduct(props) {
 
     }
 
-
     return (
         <div>
             <div className="heading">Add a new Product</div>

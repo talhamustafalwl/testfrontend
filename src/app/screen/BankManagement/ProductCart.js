@@ -3,8 +3,8 @@ import moment from 'moment'
 import { Row, Col, Space, Card, Button } from "antd";
 
 export default function ProductCart(props) {
-    const { data } = props
-
+    const { data, UpdateCartProduct } = props
+    console.log(data)
     return (
         <>
             <Row gutter={20}>
@@ -38,8 +38,15 @@ export default function ProductCart(props) {
                                 <div className="fsSmaller">{e.description}</div>
                             </Space>
                             <div></div>
-                            <Button>Checkout</Button>
 
+                            {e.addedToCart ?
+                                <div style={{ marginTop: 15, color: "blue", textAlign: "center" }}>Product is Added to Cart</div>
+                                :
+                                !e.addedToCart && e.quantity > 0 ?
+                                    <Button style={{ marginTop: 15 }} onClick={() => UpdateCartProduct(e._id)}>Add to Cart</Button>
+                                    :
+                                    <div style={{ marginTop: 15, color: "red", textAlign: "center" }}>No Quantity</div>
+                            }
                         </Card>
                     </Col>
                 ))}

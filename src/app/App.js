@@ -3,7 +3,8 @@ import Spinner from "./components/spinner/spinner";
 import { Route, Switch } from "react-router-dom";
 
 import {
-  ProductManagement, AddProduct
+  ProductManagement, AddProduct,
+  Checkout
 } from './screen/index'
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
 
           <Route exact path="/" component={ProductManagement} />
           <Route exact path="/product/new" component={AddProduct} />
+
+          <Route exact path="/checkout" component={Checkout} />
 
         </Switch>
       </Spinner>
