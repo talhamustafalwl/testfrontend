@@ -1,5 +1,5 @@
 module.exports = {
-    baseUrl: "http://localhost:5000/api",
-    baseImageURL: 'http://localhost:5000/api/uploads/images/',
+    baseUrl: "https://lit-basin-09700.herokuapp.com/api",
+    baseImageURL: 'https://lit-basin-09700.herokuapp.com/api/uploads/images/',
 
 }
