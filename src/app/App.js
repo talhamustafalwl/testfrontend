@@ -4,7 +4,8 @@ import { Route, Switch } from "react-router-dom";
 
 import {
   ProductManagement, AddProduct,
-  Checkout
+  Checkout,
+  SoldItem
 } from './screen/index'
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
           <Route exact path="/product/new" component={AddProduct} />
 
           <Route exact path="/checkout" component={Checkout} />
-
+          <Route exact path="/soldItems" component={SoldItem} />
         </Switch>
       </Spinner>
     </div >

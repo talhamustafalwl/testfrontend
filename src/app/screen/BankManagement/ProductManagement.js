@@ -33,6 +33,7 @@ export default function ProductManagement(props) {
                 <div className="heading">Products</div>
 
                 <Space >
+                    <Link to="/soldItems" ><Button >Sold Items</Button> </Link>
                     <Link to="/checkout" ><Button >Checkout</Button> </Link>
                     <Link to="/product/new" ><Button >Add a new Product</Button> </Link>
                 </Space>

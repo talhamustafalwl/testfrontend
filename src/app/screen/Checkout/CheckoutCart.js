@@ -56,10 +56,10 @@ export default function CheckoutCart(props) {
 
 
     const onFinishRegistered = (values) => {
-        // console.log("CArt", CartProducts)
+
         let amount = CartProducts.length > 0 ? CartProducts.reduce((total, num) => total + parseInt(num.price) * num.quantity, 0) + 0 : 0
         values.amount = amount;
-        values.productId = CartProducts.map(a => a.productId);
+        values.productId = CartProducts.map(a => ({ _id: a.productId, quantity: a.quantity, name: a.product.name }))
         AddProductUser(values)
     }
 
@@ -87,6 +87,12 @@ export default function CheckoutCart(props) {
                                 <div className="greyText fsSmaller">Name:</div>
                                 <div className="fsSmaller">{e.name}</div>
                             </Space>
+                            <div></div>
+                            <Space style={{ marginTop: 20 }} >
+                                <div className="greyText fsSmaller">Quantity:</div>
+                                <div className="fsSmaller">{e.quantity}</div>
+                            </Space>
+
                             <div></div>
                             <Space style={{ marginTop: 20 }} >
                                 <div className="greyText fsSmaller">Description:</div>
